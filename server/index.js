@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const campaignRoutes = require('./routes/campaignRoutes');
+const userRoutes = require('./routes/userRoutes');
 
 dotenv.config();
 
@@ -15,6 +16,7 @@ app.use(bodyParser.json());
 
 // Routes
 app.use('/api/campaigns', campaignRoutes);
+app.use('/api/users', userRoutes);
 
 // Connect to MongoDB and start the server
 mongoose
