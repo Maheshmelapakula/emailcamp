@@ -11,7 +11,9 @@ dotenv.config();
 const app = express();
 
 // Middleware
-app.use(cors());
+
+app.use(cors({ origin: 'https://emailcampfe.vercel.app' }));
+
 app.use(bodyParser.json());
 
 // Routes
