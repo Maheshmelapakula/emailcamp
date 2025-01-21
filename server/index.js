@@ -13,6 +13,7 @@ const app = express();
 // Middleware
 
 app.use(cors({ origin: 'https://emailcampfe.vercel.app' }));
+app.options('*', cors());
 
 app.use(bodyParser.json());
 
