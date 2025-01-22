@@ -14,7 +14,6 @@ const app = express();
 
 const corsOptions = {
   origin: '*', // Replace with your frontend domain
-  methods: ['GET', 'POST', 'PUT', 'DELETE','OPTIONS'],
 };
 
 
