@@ -18,7 +18,7 @@ const app = express();
 //   credentials: true,
 // };
 
-app.use(cors());
+// app.use(cors());
 
 app.use(bodyParser.json());
 
