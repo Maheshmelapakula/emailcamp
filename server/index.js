@@ -12,13 +12,12 @@ const app = express();
 
 // Middleware
 
-// const corsOptions = {
-//   origin: 'https://emailcampfe.vercel.app', // Replace with your frontend domain
-//   methods: ['GET', 'POST', 'PUT', 'DELETE'],
-//   credentials: true,
-// };
+const corsOptions = {
+  origin: '*', // Replace with your frontend domain
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+};
 
-// app.use(cors());
+app.use(cors(corsOptions));
 
 app.use(bodyParser.json());
 
